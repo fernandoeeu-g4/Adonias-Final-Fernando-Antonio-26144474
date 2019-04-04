@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".peso_planetas">
+
+    <RadioGroup
+            android:layout_width="353dp"
+            android:layout_height="273dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:id="@+id/radioGroup3"
+            app:layout_constraintHorizontal_bias="0.533">
+        <RadioButton
+                android:text="Mercúrio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioMercurio" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Vênus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioVenus" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Marte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioMarte" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Júpiter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioJupiter" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Saturno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioSaturno" android:layout_weight="1"/>
+        <RadioButton
+                android:text="Urano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/radioUrano" android:layout_weight="1"/>
+    </RadioGroup>
+    <TextView
+            android:layout_width="364dp"
+            android:layout_height="48dp"
+            android:id="@+id/outputResult" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup3" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"/>
+    <Button
+            android:text="Button"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnResult" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/outputResult" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:onClick="calculaPesoPlaneta"/>
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Seu peso na terra" android:id="@+id/pesoNaTerra"/>
+    </android.support.design.widget.TextInputLayout>
+</android.support.constraint.ConstraintLayout>
